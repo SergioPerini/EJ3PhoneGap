@@ -1,0 +1,121 @@
+html{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#logo{
+    position: absolute;
+    left: 0;
+    width: 12.6rem;
+    z-index: 1;
+}
+#points{
+    position: absolute;
+    right: 0;
+    width: 12.6rem;
+    z-index: 1;
+}
+.divpuntuacion{
+    position: absolute;
+    z-index: 2;
+    top: 10rem;
+    right: 10rem;
+}
+#puntuacion{
+    position: absolute;
+    color: #FFF;
+    z-index: 10;
+    right: 1rem;
+    /* bottom: 1rem; */
+    top: 8.4rem;
+    font-weight: bold;
+    font-size: 6rem;
+    font-family: 'Roboto', sans-serif;
+}
+#caja_ban{
+    position: absolute;
+    left: 0.75rem;
+    top: 0.05rem;
+    z-index: 10; 
+}
+.paises{
+    fill: #CCC;
+    position: absolute;
+}
+.paises:hover{
+    fill: rgb(255, 188, 87);
+    /*transform: rotate(1deg);*/
+    transition: 0.5s;
+}
+#svg{
+    width: 100%;
+    height: 100vh;
+}
+.divbanderas{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+}
+.cajabanderas{
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.banderas{
+    background-color: #CCC;
+    width: 100px;
+    height: 60px;
+    top: 40%;
+    left: 10rem;
+    position: absolute;
+}
+#blu{
+    fill: rgb(139, 255, 104);
+}
+.restart{
+    background-color: #686867;
+    color: #FFF;
+    border: 0px;
+    width: 12.5rem;
+    height: 5rem;
+    position: absolute;
+    top: 30rem;
+    left: 10rem;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.restart2{
+    background-color: #FFF;
+    color: #686867;
+    z-index: 91;
+    left: 56rem;
+}
+#resultados{
+    position: absolute;
+    top: 20rem;
+    right: 40%;
+    z-index: 90;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+}
+.fin{
+    position: absolute;
+    width: 100%;
+    z-index: 50;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: #686867;
+    display: none;
+}
+.fin2{
+    display: block;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <title>WeatherApp</title>
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="js/jquery.mobile-1.4.5.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="main">
+		<div data-role="header">
+			<div data-role="navbar" id="cabecera">
+				<ul>
+					<li><a id="navbar" href="#detalle_id"><img class="menu_logo" src="img/Menu_red.png"></a></li>
+					<li><a id="navbar" href="#"><img class="logo" src="img/Logo_red.png"></a></li>
+					<li><a id="navbar" href="#busqueda_id"><img class="mas" src="img/+.png"></a></li>
+				</ul>
+			</div>
+		</div>
+	
+		<div role="main" id="contenido">
+			<div class="ficha_ciudad" id="ubicacion">
+				
+			</div>
+		</div>
+
+	</div>
+		
+	
+	<div id="busqueda_id" data-role="page" data-prev="Principal.html">
+		<div data-role="header">
+			<div data-role="navbar">
+				<ul>
+					<li class="navrojo"><a id="navbar" href=""><img class="menu_logo" src="img/Menu.png"></a></li>
+					<li class="navrojo"><a id="navbar" href="#main"><img class="logo" src="img/Logo.png"></a></li>
+					<li class="navrojo"><a id="navbar" href="#main"><img class="mas" src="img/-.png"></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content">
+		
+			<!--<Ol data-role="listview" data-filter="true">Lista de ciudades JSON</Ol>-->
+			<form class="ui-filterable">
+			    <input id="autocomplete-input" data-type="search" placeholder="Find a city...">
+			</form>
+			<ul id="autocomplete" data-role="listview" data-inset="true" data-filter="true" data-input="#autocomplete-input"></ul>
+		</div>
+
+	</div>
+
+	
+	<div id="detalle_id" data-role="page">
+		<div data-role="header">
+			<div data-role="navbar">
+				<ul class="detalle_cab">
+					<li><a id="navbar" href=""><img class="menu_logo" src="img/Menu.png"></a></li>
+					<li><a id="navbar" href="#main"><img class="logo" src="img/Logo_grey.png"></a></li>
+					<li><a id="navbar" href="#main"><img class="mas" src="img/x.png"></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content" id="content_detail">
+			<h1 class="detalle_info" id="nombreciudad"></h1>
+			<h2 class="detalle_info" id="temperatura"></h2>
+			
+			<div id="info_div">
+				<h3 class="detalle_info2" id="mintemp"></h3>
+				<h3 class="detalle_info2" id="maxtemp"></h3>
+				<h3 class="detalle_info2" id="humedad"></h3>
+			</div>
+		</div>
+	</div>
+
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
